@@ -1,0 +1,11 @@
+node_modules/
+**/*.env
+**/.env*
+build
+public/
+!public/images/users/default-user-photo.png
+!public/files/example.pdf
+!public/projects/example.rar
+!public/cloud/example.txt
+!public/announcements/example.pdf
+!example.env

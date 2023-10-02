@@ -1,0 +1,102 @@
+.sidebar {
+  grid-column: 1/1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5fr 9fr;
+  justify-items: center;
+  font-size: 1.8rem;
+  color: var(--color-grey-3);
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  transition: all 0.2s;
+  overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebarNav {
+  width: 100%;
+  height: 100%;
+  padding: 0.8rem 1.5rem;
+}
+
+.toggleSidebarCheckbox {
+  display: none;
+}
+
+.toggleSidebarLabel {
+  display: none;
+  fill: var(--color-primary);
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  position: fixed;
+  top: 1rem;
+  left: 2rem;
+  z-index: 3;
+  transition: all 0.2s;
+}
+
+.toggleSidebarLabel svg {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .toggleSidebarLabel {
+    display: block;
+  }
+  .sidebar {
+    position: fixed;
+    background: var(--primary-linear-gradient);
+    opacity: 1;
+    width: 40%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .toggleSidebarCheckbox:checked ~ .sidebar {
+    animation: showSidebar 0.3s forwards;
+  }
+  .toggleSidebarCheckbox:checked ~ .toggleSidebarLabel {
+    fill: var(--color-white);
+  }
+  .toggleSidebarCheckbox:not(:checked) ~ .sidebar {
+    animation: hideSidebar 0.3s forwards;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .sidebar {
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .sidebar {
+    width: 70%;
+  }
+}
+
+@keyframes showSidebar {
+  from {
+    transform: translateX(calc(-100% + 1.5rem));
+  }
+  to {
+    transform: translateX(-0%);
+  }
+}
+
+@keyframes hideSidebar {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% + 1.5rem));
+  }
+}

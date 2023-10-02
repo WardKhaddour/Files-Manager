@@ -1,0 +1,22 @@
+.uploadFile {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /* overflow-y: scroll; */
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  transition: all 0.2s;
+  transform-origin: bottom right;
+}
+
+.hidden {
+  transform: scale(0);
+}
+
+.shown {
+  transform: scale(1);
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "_id": "64a02633c05b2814a7ed07ad",
+    "name": "Ward",
+    "email": "ward@gmail.com",
+    "password": "$2a$12$guaxn5rN4d4z6En6Cxe1CeK3veGP4DSOXw/6V7BvJssDCLcJ7czLG",
+    "photoSrc": "default-user-photo.png",
+    "year": 4,
+    "section": "global",
+    "role": "student",
+    "availableSpace": 2048,
+    "emailIsConfirmed": true,
+    "active": true
+  },
+  {
+    "_id": "64a02e3017cf83afbf63a0cd",
+    "name": "Ward",
+    "email": "teacher@gmail.com",
+    "password": "$2a$12$QLAJa6EgeI307tVsLrTG5eqUPE0EOhgEmK/pn1fOdr4ZElzwjj2PW",
+    "photoSrc": "default-user-photo.png",
+    "year": 4,
+    "section": "global",
+    "role": "teacher",
+    "availableSpace": 2048,
+    "emailIsConfirmed": true,
+    "active": true
+  },
+  {
+    "_id": "64a02633c05b2814a7ed05ad",
+    "name": "Ward",
+    "email": "admin@gmail.com",
+    "password": "$2a$12$guaxn5rN4d4z6En6Cxe1CeK3veGP4DSOXw/6V7BvJssDCLcJ7czLG",
+    "photoSrc": "default-user-photo.png",
+    "year": 4,
+    "section": "global",
+    "role": "admin",
+    "availableSpace": 2048,
+    "emailIsConfirmed": true,
+    "active": true
+  }
+]

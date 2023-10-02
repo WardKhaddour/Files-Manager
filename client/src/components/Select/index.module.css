@@ -1,0 +1,17 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 1.5rem;
+  font-size: 1.8rem;
+  color: var(--color-grey-2);
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.errorMessage {
+  margin-left: 1rem;
+  color: var(--color-error);
+  font-size: 90%;
+}

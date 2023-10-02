@@ -1,0 +1,29 @@
+[
+  {
+    "_id": "64a0278048022452bc0316b8",
+    "name": "programming1",
+    "university": "64a0272848022452bc0316a8",
+    "faculty": "64a0274f48022452bc0316b1",
+    "year": [
+      1
+    ],
+    "section": [
+      "global"
+    ]
+  },
+  {
+    "_id": "64a1d1ae49da789124a2ec79",
+    "name": "programming2",
+    "university": "64a0272848022452bc0316a8",
+    "faculty": "64a0274f48022452bc0316b1",
+    "teachers": [
+      "64a02e3017cf83afbf63a0cd"
+    ],
+    "year": [
+      1
+    ],
+    "section": [
+      "global"
+    ]
+  }
+]

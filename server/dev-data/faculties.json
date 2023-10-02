@@ -1,0 +1,13 @@
+[
+  {
+    "_id": "64a0274f48022452bc0316b1",
+    "name": "ief",
+    "university": "64a0272848022452bc0316a8",
+    "sections": [
+      "ai",
+      "global",
+      "software",
+      "networks"
+    ]
+  }
+]

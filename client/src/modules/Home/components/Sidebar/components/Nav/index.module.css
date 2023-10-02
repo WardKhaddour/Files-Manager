@@ -1,0 +1,13 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.homeLinks,
+.userLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

@@ -1,0 +1,28 @@
+.btn {
+  all: unset;
+  box-sizing: inherit;
+  background-color: var(--color-grey-1);
+  border-radius: 20px;
+  display: block;
+  color: var(--color-blue-3);
+  font-weight: bold;
+  font-size: 1.6rem;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  transform: scale(1.1);
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.disabled:hover {
+  background-color: var(--color-danger);
+  transform: scale(1);
+}

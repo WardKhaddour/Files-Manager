@@ -1,0 +1,9 @@
+.updatePhoto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.upload {
+  margin: 0 auto;
+}

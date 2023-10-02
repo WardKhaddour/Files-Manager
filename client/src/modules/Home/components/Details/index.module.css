@@ -1,0 +1,122 @@
+.details {
+  /* display: grid;
+  grid-template-columns: 1fr 5fr 2fr;
+  grid-template-rows: 1fr 12fr; */
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  height: 100%;
+  width: 100%;
+  color: var(--color-blue-3);
+  margin-top: 3rem;
+}
+.heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.backLink {
+  height: 4rem;
+  width: 4rem;
+  margin-top: 0.7rem;
+}
+.backLink svg {
+  height: 100%;
+  width: 100%;
+}
+
+.btnDownload {
+  width: fit-content;
+  justify-self: end;
+  padding: 1rem 3rem;
+}
+
+.name {
+  font-size: 3rem;
+  width: 75%;
+}
+
+.dataContainer {
+  min-height: 100%;
+  width: 100%;
+  filter: url('#goo');
+  position: relative;
+  padding-top: 8%;
+  overflow-y: hidden;
+}
+.dataContainer::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  clip-path: polygon(0 0, 20% 0%, 25% 10%, 100% 10%, 100% 100%, 0% 100%);
+  background-color: var(--color-grey-3);
+  z-index: -1;
+}
+
+.data {
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: flex-start;
+  gap: 1rem;
+  padding: 0 5rem;
+  overflow-y: scroll;
+  position: absolute;
+  width: 100%;
+  height: 88%;
+  top: 12%;
+  left: 0;
+  overflow-y: scroll;
+}
+
+.noContent {
+  text-align: center;
+  font-size: 3rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .data {
+    grid-template-columns: 1fr;
+  }
+  .dataContainer {
+    padding-top: 10%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .dataContainer {
+    padding-top: 15%;
+  }
+  .dataContainer::after {
+    clip-path: polygon(0 0, 30% 0%, 35% 10%, 100% 10%, 100% 100%, 0% 100%);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .data {
+    padding: 0 1rem;
+  }
+  .dataContainer {
+    padding-top: 20%;
+  }
+  .dataContainer::after {
+    clip-path: polygon(0 0, 35% 0%, 40% 10%, 100% 10%, 100% 100%, 0% 100%);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .dataContainer {
+    padding-top: 22%;
+  }
+  .dataContainer::after {
+    clip-path: polygon(0 0, 40% 0%, 45% 8%, 100% 8%, 100% 100%, 0% 100%);
+  }
+}

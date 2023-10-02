@@ -1,0 +1,148 @@
+.authLayout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  min-height: 100vh;
+  font-size: 3rem;
+  align-items: stretch;
+  background: linear-gradient(
+    to bottom,
+    var(--color-blue-4),
+    var(--color-blue-5)
+  );
+}
+
+.authLayoutSecondary {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.authLayoutText {
+  position: absolute;
+  font-size: 2.8rem;
+  top: 20%;
+  left: 40%;
+  transform: translateX(-30%);
+  color: var(--color-white);
+}
+
+.authLayoutImage {
+  display: block;
+  width: 40rem;
+  position: absolute;
+  right: 0;
+  top: 60%;
+  transform: translate(30%, -50%);
+}
+
+.authLayoutImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.authLayoutClips {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 7rem;
+  height: 7rem;
+}
+
+.authLayoutClips img {
+  width: 100%;
+  height: 100%;
+}
+
+.circleTop,
+.circleStart {
+  height: 20rem;
+  width: 20rem;
+  background: var(--color-grey-1);
+  opacity: 0.1;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.circleTop {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.circleStart {
+  top: 50%;
+  left: 0;
+  transform: translate(-60%, -50%);
+}
+
+.authLayoutContent {
+  background-color: var(--color-white);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+
+@media only screen and (max-width: 1100px) {
+  .authLayoutImage {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .authLayout {
+    grid-template-rows: 30vh 1fr;
+    grid-template-columns: 1fr;
+  }
+  .authLayoutSecondary {
+    position: relative;
+    height: auto;
+  }
+  .authLayoutImage {
+    right: 0;
+    top: 0;
+    transform: translate(-5rem, 0);
+    height: 100%;
+  }
+  .authLayoutContent {
+    border-top-left-radius: 75px;
+    border-top-right-radius: 75px;
+    border-bottom-left-radius: 0;
+  }
+  .authLayoutText {
+    width: 50%;
+    top: 25%;
+    left: 3rem;
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .authLayoutImage {
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .authLayoutContent {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .authLayoutImage {
+    width: 35%;
+  }
+
+  /* .authLayoutSecondary,
+  .authLayoutText,
+  .authLayoutImage,
+  .authLayoutClips,
+  .circleTop,
+  .circleStart {
+    display: none;
+  } */
+}
